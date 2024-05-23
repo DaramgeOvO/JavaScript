@@ -3,44 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Daramge♥Dotory</title>
 </head>
 <body>
-    <script>
-        var x = 10;
-        console.log(x);
-        var x = 100;   // var는 이중선언 허용  근데 사용하지 않기
-        console.log(x);
-        y = 1000; // 변수의 호이스팅(hoisting)
-        console.log(y);
-        let a = 1;
-        //let a = 2; 
-        //에러!! let과 const는 더이상 이중선언을 허용하지 않는다.
-        b = 2;
-        console.log(b);
-        
-        function displayNumber() {
-            let z = 5;
-            console.log(z);
-            if(z >= 10) {
-                let w;
-                console.log("z는 2자리 숫자");
-            }
-        }
-
-        /* let, const 정리
-        1.호이스팅된 변수의 선언에는 사용할 수 없음.
-         이유는 let과 const가 블록스코프(제한된 스코프)를 가지므로 호이스팅된
-         최상위 스코프를 가질 수 없기 때문
-        2.재선언 안됨
-        let v1 = 10;
-        let v1 = 100; <- 재선언 에러
-        3. 재할당은 let은 가능, const는 불가능
-        let v2 = 1;
-        v2 = 2; // 재할당 가능
-        const v3 = 1;
-        v3 = 2; // 에러. 재할당 불가능 */
-    </script>
-    
+    <div>
+        <h1>선택자 지정해보자</h1>
+        <p>태그명 선택자</p>
+        <p class="classSelect">클래스 선택자</p>
+        <p id="idSelect">아이디 선택자</p>
+    </div>
+    <article class="s1">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        It has survived not only five centuries, but also the leap into electronic typesetting, 
+        remaining essentially unchanged. It was popularised in the 1960s with the release of 
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+        software like Aldus PageMaker including versions of Lorem Ipsum
+    </article>
 </body>
 </html>

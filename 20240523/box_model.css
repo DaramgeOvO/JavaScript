@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.s1 {
+    border: 1px solid black;
+    font-size: 16px;
+    margin: 10px;
+    padding: 5px;
+}
+.s2 {
+    border: 1px solid black;
+    font-size: 16px;
+    margin: 10px;
+    padding: 5px;
+    display: inline-block;
+}
+.boxsizing {
+    width: 180px;
+    height: 30px;
+    border:1px solid orchid;
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+}
+.s3 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 10px;
+}

@@ -1,0 +1,24 @@
+p {
+    font-style: italic;
+}
+
+.classSelect {
+    color: #ffc1b5;
+    background-color: rgb(2, 7, 21);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+}
+#idSelect {
+    color: rgb(245, 245, 245);
+    background-color: olivedrab;
+    text-decoration: underline;
+}
+.s1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 16px;
+    border: 1px solid darkgray;
+    background-color: #f5f5dc;
+}
