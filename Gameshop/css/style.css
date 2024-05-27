@@ -1,7 +1,15 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') 
+    format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Poppins;
 }
 .container {
     width: 70%;
@@ -32,6 +40,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    padding: 20px;
 }
 .footer {
     width: 100%;
@@ -56,9 +65,16 @@
     cursor: pointer;
 }
 .game {
+    border-radius: 5px;
     background-color: white;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+    padding-bottom: 20px;
 }
 
 .image {
     width: 100%;
+}
+.content p {
+    margin: 5px 0 5px 10px;
+    
 }
