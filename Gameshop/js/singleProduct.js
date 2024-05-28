@@ -34,5 +34,8 @@ function displaySingleProduct(data) {
     game.appendChild(genre);
     game.appendChild(price);
     game.appendChild(text);
+    game.style.setProperty("box-shadow", "initial", "important");
+    game.style.setProperty("transform", "initial", "important");
+    game.style.setProperty("cursor", "initial", "important");
     product.appendChild(game);
 }
