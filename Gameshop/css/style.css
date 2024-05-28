@@ -10,6 +10,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins;
+    text-decoration: none;
+    color: inherit;
 }
 .container {
     width: 70%;
@@ -68,7 +70,13 @@
     border-radius: 5px;
     background-color: white;
     box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
     padding-bottom: 20px;
+}
+.game:hover {
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.4);
+    transform: translate(0px, -5px);
+    cursor: pointer;
 }
 
 .image {
@@ -76,5 +84,12 @@
 }
 .content p {
     margin: 5px 0 5px 10px;
-    
+}
+.singleProduct {
+    width: 100%;
+    background-color: #FFFFF3;
+    padding: 20px;
+}
+.singleProduct p {
+    margin: 10px 20px;
 }
