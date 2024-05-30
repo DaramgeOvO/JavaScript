@@ -136,7 +136,20 @@
     border-radius: 5px;
     cursor: pointer;
   }
-  .loginBtn:hover {
+  .purchaseBtn {
+    width: 100px;
+    height: 40px;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 50px;
+  }
+  
+  .loginBtn,.logoutBtn,.purchaseBtn :hover {
     background-color: lightblue;
     color: dodgerblue;
   }
