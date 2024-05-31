@@ -7,13 +7,15 @@ function sessionCurrent() {
   .then((response)=>{
     console.log("데이터:", response.data);
     if (response.status == 200) {
-      const userId = response.data;
+      const userId = response.data.userId;
+      const authority = response.data.authority[0].authority;
       let cartItems = JSON.parse(localStorage.getItem(userId));
       if (cartItems) {
         displayCart(cartItems);
         const data = cartItems.map((game)=>{
           // Purchase객체를 만들어서 리턴
-          return { game: game, user:{userId:userId} };
+          return { game: game, user:{userId:userId
+                    , authority:{authorityName:authority}} };
         })
         document.querySelector(".purchaseBtn")
           .addEventListener("click", ()=>{
@@ -23,6 +25,7 @@ function sessionCurrent() {
               .then((response)=>{
                 console.log("데이터:", response.data);
                 localStorage.removeItem(userId);
+                window.location.reload();
               })
               .catch((error)=>{
                 console.log("에러 발생:", error);

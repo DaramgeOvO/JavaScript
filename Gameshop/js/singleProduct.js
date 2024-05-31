@@ -56,7 +56,7 @@ function displaySingleProduct(data) {
     product.appendChild(game);
 
     document.querySelector(".cartBtn").addEventListener("click", ()=>{
-        sessionCurrent();
+        sessionCurrent(data);
     });
 }
 
@@ -68,7 +68,7 @@ function sessionCurrent(data) {
     .then((response) =>{
         console.log("데이터:" , response);
         if(response.status == 200) {
-        const userId = response.data;
+        const userId = response.data.userId;
         let cartItems = JSON.parse(localStorage.getItem(userId));
         if(!cartItems){
             cartItems =[];
