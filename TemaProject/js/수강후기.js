@@ -1,6 +1,7 @@
 document.querySelector(".reviewBox9Grid-3").addEventListener("click", () => {
     document.querySelector(".reivewWriteBox").classList.remove("hidden");
     document.querySelector(".reivew").classList.add("hidden");
+    document.querySelector(".reviewBox").classList.add("hidden");
   });
 
   document.querySelector(".reviewBtn").addEventListener("click", () => {
