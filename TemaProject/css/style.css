@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +38,6 @@
   left: 380px;
   bottom: 20px;
 }
-
 .mainTitle2 {
   width: 100%;
   color: white;
@@ -61,50 +62,42 @@
   justify-content: center;
   align-items: center;
 }
-
 .ring i {
   position: absolute;
   inset: 0;
   border: 2px solid #fff;
   transition: 0.5s;
 }
-
 .ring i:nth-child(1) {
   border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
   animation: animate 6s linear infinite;
 }
-
 .ring i:nth-child(2) {
   border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
   animation: animate 4s linear infinite;
 }
-
 .ring i:nth-child(3) {
   border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
   animation: animate2 10s linear infinite;
 }
-
 /* .ring:hover i {
   border: 6px solid var(--clr);
   filter: drop-shadow(0 0 20px var(--clr));
 } */
 @keyframes animate {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
 @keyframes animate2 {
   0% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
-
   100% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 
@@ -117,8 +110,7 @@
   bottom: 340px;
   left: 100px;
   position: relative;
-  cursor: pointer;
-  /* Pointer cursor for button */
+  cursor: pointer; /* Pointer cursor for button */
 }
 
 .menu {
@@ -134,7 +126,7 @@
   opacity: 0;
   padding: 10px;
   transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1),
-      opacity 1s cubic-bezier(0.25, 1, 0.5, 1);
+    opacity 1s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .menu.active {
@@ -148,13 +140,14 @@
   flex-direction: column;
   align-items: end;
   padding: 20px;
+  cursor: pointer;
 }
 
-.menuContents>div {
+.menuContents > div {
   padding: 30px 30px 0px 30px;
 }
 
-.menuContents>div:hover {
+.menuContents > div:hover {
   color: rgb(0, 0, 77);
   font-weight: 600;
 }
@@ -169,7 +162,7 @@
   align-items: center;
 }
 
-.closeBtn>img {
+.closeBtn > img {
   height: 20px;
   width: 20px;
 }
@@ -213,26 +206,22 @@ body {
 .container {
   width: 100%;
 }
-
 .box1 {
   width: 100%;
   height: 500px;
   background-color: black;
 }
-
 .box2 {
   width: 100%;
   height: auto;
   background-color: white;
 }
-
 .box3 {
   width: 100%;
   height: 500px;
   background-color: black;
   margin-top: 50px;
 }
-
 .wbox {
   width: 70%;
   margin: 0 auto;
@@ -247,7 +236,7 @@ body {
   height: 50px;
 }
 
-.mainMenu>div {
+.mainMenu > div {
   color: white;
   margin-top: 30px;
 }
@@ -258,9 +247,10 @@ body {
 
 .rightMenu {
   padding: 10px;
+  cursor: pointer;
 }
 
-.mainMenu>div>span:hover {
+.mainMenu > div > span:hover {
   color: gray;
 }
 
@@ -281,19 +271,29 @@ body {
   align-items: center;
 }
 
-.subMenu>div {
+.subMenu > div {
   padding: 40px 20px 40px 0px;
 }
 
-.subMenu>div:hover {
+.subMenu > div:hover {
   color: gray;
 }
 
-.logo,
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
 .cartIcon,
 .mypageIcon {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
+}
+
+.cartIcon > img,
+.mypageIcon > img {
+  width: 30px;
+  height: 30px;
 }
 
 /* 연혁 페이지 설정*/
@@ -353,7 +353,6 @@ body {
   overflow: hidden;
 }
 
-
 .teacherPicture img {
   transition: all 0.2s linear;
   width: inherit;
@@ -364,7 +363,6 @@ body {
   opacity: 0.5;
 }
 
-
 .teacherName {
   margin: 10px 0px 5px 0px;
 }
@@ -372,8 +370,6 @@ body {
 .teacherSubject {
   margin: 5px 0px 5px 0px;
 }
-
-
 
 /* 강사 프로필 설정 */
 .singleTeacherTitle {
@@ -407,12 +403,12 @@ body {
   margin: 30px 50px 0px 0px;
 }
 
-.singleTeacher1>div {
+.singleTeacher1 > div {
   font-size: 20px;
   padding: 10px 0px 0px 0px;
 }
 
-.singleTeacher2>div {
+.singleTeacher2 > div {
   font-size: 20px;
   padding: 0px 50px 30px 0px;
   line-height: 40px;
@@ -421,7 +417,6 @@ body {
 /*수강안내*/
 
 .courseBox,
-.detailedBox,
 .tasteBox,
 .pirceGuideBox,
 .noticeBox1,
@@ -434,12 +429,18 @@ body {
   font-weight: bold;
 }
 
+.detailedBox {
+  font-size: 40px;
+  margin: 10px 0px 30px 0px;
+  padding: 10px 0px 30px 0px;
+  font-weight: bold;
+}
+
 .allCourse {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
-
 .allCourseClick {
   margin: 20px 0 20px 0;
 }
@@ -450,24 +451,28 @@ body {
   height: 300px;
 }
 
+.backBtn {
+  background-color: gray;
+  width: 50px;
+  height: 50px;
+  margin: 30px 0px 10px 0px;
+}
+
 .detailedBox2 {
   width: 100%;
   display: grid;
   grid-template-columns: 1.8fr 1.2fr;
 }
-
 .detailedBox2Img {
   width: 700px;
   height: 650px;
   background-color: grey;
   margin-bottom: 30px;
 }
-
 .detailedBox2Text {
   width: 600px;
   height: 650px;
 }
-
 .detailedBox2Text2 {
   width: 100%;
   height: 800px;
@@ -478,46 +483,37 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-
 .tasteCourseClick {
   margin: 20px 0 20px 0;
 }
-
 .tasteCourseClickAvi {
   background-color: gray;
   width: 500px;
   height: 300px;
-
 }
-
 .coursePriceGuide {
   width: 100%;
   height: 800px;
   border: 1px solid black;
 }
-
 .horizontal-line {
   width: 90%;
   height: 2px;
   background-color: #000;
   margin: 40px 800px 5px 80px;
 }
-
 #priceGuide1 {
   font-size: 70px;
   margin: 20px 0 10px 100px;
 }
-
 #priceGuide2 {
   font-size: 70px;
   margin: 20px 0 10px 100px;
 }
-
 .priceGuide3 {
   font-size: 40px;
   margin: 20px 0 0px 100px;
 }
-
 .priceGuide4 {
   font-size: 90px;
   margin: 0px 80px 10px 0px;
@@ -525,12 +521,55 @@ body {
   display: flex;
   justify-content: end;
 }
-
 #priceGuide5 {
   font-size: 25px;
   margin: 40px 80px 10px 0px;
   display: flex;
   justify-content: end;
+}
+
+/* 동영상 모달창 */
+.modal {
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    width: 100%
+    height: 100%
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    pointer-events: none;
+    padding: 20px;
+}
+.modal-content {
+    width: 800px;
+    height: 500px;
+    background: grey;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease-in out, transform 0.3s ease-in out;
+    transform: scale(0.8);
+}
+.modal.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal.show .modal-content {
+    opacity: 1;
+    transform: scale(1);
+}
+#modalCloseBtn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#modalCloseBtn: hover {
+    color: black;
 }
 
 /*공지사항*/
@@ -545,28 +584,23 @@ body {
   overflow: hidden;
   transition: height 0.3s ease;
   margin-bottom: 30px;
-
 }
-
 .noticeBox2.active {
   height: 330px;
   transition: height 0.3s ease;
 }
-
 .noticeBox3 {
   display: grid;
   grid-template-columns: 8fr 1.5fr 0.5fr;
   width: 100%;
   height: 88px;
 }
-
 .noticeBox3-1 {
   font-size: 32px;
   font-weight: bold;
   margin-right: 30px;
   line-height: 88px;
 }
-
 .noticeBox3-2 {
   cursor: pointer;
   width: 2rem;
@@ -579,23 +613,18 @@ body {
   right: 1.5rem;
   font-size: 50px;
 }
-
 .noticeBox3-2:focus {
   outline: 0;
 }
-
 .noticeBox3-3.close {
   display: none;
 }
-
 .noticeBox2.active .noticeBox3-3.close {
   display: block;
 }
-
 .noticeBox2.active .noticeBox3-3.open {
   display: none;
 }
-
 .noticeBoxLine {
   width: 100%;
   height: 1px;
@@ -603,17 +632,14 @@ body {
   margin-bottom: 20px;
   border: 1px solid black;
 }
-
 .noticeBox4 {
   font-size: 24px;
   height: 150px;
 }
-
 .noticeBox5 {
   display: flex;
   justify-content: end;
 }
-
 .noticeBox5-1 {
   width: 62px;
   height: 25px;
@@ -623,7 +649,6 @@ body {
   text-align: center;
   line-height: 25px;
 }
-
 .noticeBox6 {
   width: 178px;
   height: 66px;
@@ -645,7 +670,6 @@ body {
   padding: 25px;
   text-align: center;
 }
-
 .noticeWriteBox2 {
   width: 100%;
   height: 800px;
@@ -653,7 +677,6 @@ body {
   border-radius: 20px;
   margin-top: 30px;
 }
-
 .noticeWriteBox3 {
   width: 200px;
   height: 70px;
@@ -677,16 +700,13 @@ body {
   line-height: 70px;
   margin-bottom: 20px;
 }
-
 .customerInquiryBox3 {
   width: 100%;
   height: 1033px;
   border: 1px solid black;
   border-radius: 25px;
   padding: 50px;
-
 }
-
 .customerInquiryBox4 {
   display: grid;
   grid-template-columns: 0.5fr 5.5fr 1fr 1fr 1fr;
@@ -694,7 +714,6 @@ body {
   gap: 20px;
   text-align: center;
 }
-
 .customerInquiryBox5 {
   display: grid;
   grid-template-columns: 0.5fr 5.5fr 1fr 1fr 1fr;
@@ -703,12 +722,10 @@ body {
   text-align: center;
   margin-bottom: 20px;
 }
-
 #customerInquiryBoxLine {
   border: 1px solid black;
   margin: 30px auto;
 }
-
 .customerInquiryBox6 {
   width: 263px;
   height: 64px;
@@ -721,7 +738,6 @@ body {
   font-size: 32px;
   font-weight: bold;
 }
-
 .inquiryBox2 {
   width: 412px;
   height: 97px;
@@ -758,7 +774,7 @@ body {
   margin-top: 30px;
 }
 
-.enrollment>div {
+.enrollment > div {
   border: 2px solid black;
   border-radius: 5px;
   margin: 0px 0px 30px 0px;
@@ -793,7 +809,8 @@ body {
 /* .enrollPrice {
   padding: 30px 20px 20px 0px;
 } */
-.enrollPrice>div {
+
+.enrollPrice > div {
   display: inline-block;
   padding: 20px 40px 20px 0px;
   margin-right: 50px;
@@ -816,6 +833,7 @@ body {
 }
 
 /* 나의 진도율 페이지 설정 */
+
 .progressTitle {
   font-size: 40px;
   font-weight: bold;
@@ -960,7 +978,6 @@ body {
   margin: 30px;
 }
 
-
 /* 수강후기 */
 
 .reviewBox {
@@ -968,7 +985,6 @@ body {
   height: 300px;
   background-color: #2f2f2f;
 }
-
 .reviewBox2-content {
   width: 100%;
   height: 300px;
@@ -978,13 +994,11 @@ body {
   top: -150px;
   padding: 35px;
 }
-
 .reviewBox3 {
   display: grid;
   grid-template-columns: 2fr 1fr 3fr;
   justify-items: center;
 }
-
 .reviewBox4 {
   width: 192px;
   height: 47px;
@@ -994,7 +1008,6 @@ body {
   font-weight: bold;
   line-height: 47px;
 }
-
 #reviewBox3-1 {
   width: 288px;
   height: 70px;
@@ -1005,7 +1018,6 @@ body {
   line-height: 70px;
   margin-top: 50px;
 }
-
 #reviewBox3-2 {
   width: 210px;
   height: 70px;
@@ -1016,17 +1028,14 @@ body {
   line-height: 70px;
   margin-top: 50px;
 }
-
 .reviewBoxStarGrid {
   display: grid;
   grid-template-columns: 1fr 2.5fr;
   margin-top: 5px;
 }
-
 .reviewBoxStar {
   margin-top: 15px;
 }
-
 #reviewBoxStar1-1 {
   width: 294px;
   height: 13px;
@@ -1034,7 +1043,6 @@ body {
   border-radius: 25px;
   margin-top: 10px;
 }
-
 .reviewBoxStar2-1 {
   width: 294px;
   height: 13px;
@@ -1043,7 +1051,6 @@ body {
   margin-top: 10px;
   position: relative;
 }
-
 #reviewBoxStar2-1 {
   width: 254px;
   height: 13px;
@@ -1053,7 +1060,6 @@ body {
   position: absolute;
   top: -10px;
 }
-
 #reviewBoxStar2-2 {
   width: 190px;
   height: 13px;
@@ -1063,7 +1069,6 @@ body {
   position: absolute;
   top: -10px;
 }
-
 #reviewBoxStar2-3 {
   width: 150px;
   height: 13px;
@@ -1073,7 +1078,6 @@ body {
   position: absolute;
   top: -10px;
 }
-
 #reviewBoxStar2-4 {
   width: 87px;
   height: 13px;
@@ -1083,11 +1087,9 @@ body {
   position: absolute;
   top: -10px;
 }
-
 .reviewStar {
   font-size: 22px;
 }
-
 .reviewBox5 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -1102,18 +1104,15 @@ body {
   position: relative;
   top: -110px;
 }
-
-.reviewBox5>div:hover {
+.reviewBox5 > div:hover {
   color: white;
   background-color: #2f2f2f;
   border-radius: 50px;
 }
-
 .reviewBox6 {
   width: 85%;
   margin: auto;
 }
-
 #reviewBox6-1 {
   width: 230px;
   height: 56px;
@@ -1125,7 +1124,6 @@ body {
   position: relative;
   top: -30px;
 }
-
 .reviewBox7 {
   width: 100%;
   height: 360px;
@@ -1134,12 +1132,10 @@ body {
   padding: 50px;
   margin-bottom: 40px;
 }
-
 .reviewBox7Grid {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
 }
-
 #reviewBox7Grid-1 {
   width: 143px;
   height: 43px;
@@ -1147,7 +1143,6 @@ body {
   text-align: center;
   line-height: 43px;
 }
-
 #reviewBox7Grid-2 {
   width: 143px;
   height: 26px;
@@ -1156,7 +1151,6 @@ body {
   line-height: 26px;
   margin-top: 5px;
 }
-
 #reviewBox7Grid-3 {
   width: 140px;
   height: 26px;
@@ -1164,26 +1158,22 @@ body {
   text-align: center;
   margin-top: 15px;
 }
-
 #reviewBox7Grid-4 {
   width: 143px;
   font-size: 24px;
   text-align: center;
 }
-
 .reviewBox8 {
   width: 100%;
   height: 133px;
   border: 1px solid black;
   margin: 20px 50px 0 0;
 }
-
 .reviewBox9Grid {
   display: grid;
   grid-template-columns: 8fr 2fr;
   margin-top: 30px;
 }
-
 .reviewBox9Grid-1 {
   width: 62px;
   height: 25px;
@@ -1192,7 +1182,6 @@ body {
   font-weight: bold;
   margin: 0 15px 0 15px;
 }
-
 .reviewBox9Grid-3 {
   width: 62px;
   height: 25px;
@@ -1201,11 +1190,9 @@ body {
   font-weight: bold;
   margin: 0 15px 0 15px;
 }
-
 .reviewBox9Grid-2 {
   display: flex;
 }
-
 .reivewWriteBox1 {
   width: 100%;
   height: 97px;
@@ -1216,7 +1203,6 @@ body {
   font-weight: bold;
   border-radius: 25px;
 }
-
 .reivewWriteBox2 {
   width: 100%;
   height: 782px;
@@ -1225,12 +1211,10 @@ body {
   margin-top: 30px;
   padding: 20px;
 }
-
 .reivewWriteBoxStar {
   font-size: 70px;
   margin-bottom: 20px;
 }
-
 .reivewWriteBox3 {
   width: 200px;
   height: 70px;
@@ -1242,159 +1226,6 @@ body {
   margin-top: 30px;
   text-align: center;
   line-height: 70px;
-}
-
-/* 로그인 화면 */
-
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
-
-.loginBody {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #111;
-  width: 100%;
-  overflow: hidden;
-}
-
-.ring {
-
-  position: relative;
-  width: 600px;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.ring i {
-  position: absolute;
-  inset: 0;
-  border: 2px solid #fff;
-  transition: 0.5s;
-}
-
-.ring i:nth-child(1) {
-  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
-  animation: animate 6s linear infinite;
-}
-
-.ring i:nth-child(2) {
-  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
-  animation: animate 4s linear infinite;
-}
-
-.ring i:nth-child(3) {
-  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
-  animation: animate2 10s linear infinite;
-}
-
-@keyframes animate {
-  0% {
-      transform: rotate(0deg);
-  }
-  100% {
-      transform: rotate(360deg);
-  }
-}
-
-@keyframes animate2 {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-.login {
-  position: absolute;
-  width: 300px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.login h2 {
-  font-size: 2em;
-  color: #fff;
-}
-
-.login .inputBx {
-  position: relative;
-  width: 100%;
-}
-
-.login .inputBx input {
-  position: relative;
-  width: 100%;
-  padding: 12px 20px;
-  background: transparent;
-  border: 2px solid #fff;
-  border-radius: 40px;
-  font-size: 1.2em;
-  color: #fff;
-  box-shadow: none;
-  outline: none;
-}
-
-.login .inputBx input::placeholder {
-  color: rgba(255, 255, 255, 0.75);
-  font-size: medium;
-}
-
-.login .links {
-  position: relative;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #fff;
-}
-
-.login .links .find-password {
-  color: #fff;
-  text-decoration: underline;
-  font-size: 14px;
-  padding: 5px 10px 0px 10px;
-}
-
-.login .links .signup-link {
-  padding: 0 20px;
-}
-
-.login .sign-inBx input[type="submit"] {
-  width: 100%;
-  background: rgb(94, 94, 94);
-  border: none;
-  cursor: pointer;
-  font-size: medium;
-  transition: 0.3s;
-}
-
-.login .sign-inBx {
-  position: relative;
-  width: 100%;
-}
-
-.login .sign-inBx input {
-  position: relative;
-  width: 100%;
-  padding: 12px 20px;
-  background: transparent;
-  border: 2px solid #fff;
-  border-radius: 40px;
-  font-size: 1.2em;
-  color: #fff;
-  box-shadow: none;
-  outline: none;
-}
-.login .sign-inBx input:hover {
-  background: rgb(51, 51, 51);
 }
 
 /*장바구니 */
@@ -1497,159 +1328,143 @@ body {
   border-radius: 50px;
 }
 
+/* 로그인 화면 */
 
-/* 회원가입 추후에 수정필요 */
 
-html {
-  height: 100%;
-  background: #223;
-  display: grid;
-  place-items: center;
-  overflow: auto; /* Ensures content is scrollable if it exceeds viewport height */
+
+.loginBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #111;
+  width: 100%;
+  overflow: hidden;
 }
-
-.box {
-  width: 80vmin;
-  padding: 20px;
-  color: white;
-  text-shadow: 0 1px 0 #000;
-  
-  --border-angle: 0turn; /* For animation. */
-  --main-bg: conic-gradient(
-      from var(--border-angle),
-      #213,
-      #112 5%,
-      #112 60%,
-      #213 95%
-    );
-  
-  border: solid 5px transparent;
-  border-radius: 2em;
-  --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #08f, #f03 99%, transparent);
-  
-  background: 
-    /* padding-box clip this background in to the overall element except the border. */
-    var(--main-bg) padding-box,
-    /* border-box extends this background to the border space */
-    var(--gradient-border) border-box, 
-    /* Duplicate main background to fill in behind the gradient border. You can remove this if you want the border to extend "outside" the box background. */
-    var(--main-bg) border-box;
-  
-  background-position: center center;
-
-  animation: bg-spin 3s linear infinite;
+.ring {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-@keyframes bg-spin {
-  to {
-    --border-angle: 1turn;
+.ring i {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #fff;
+  transition: 0.5s;
+}
+.ring i:nth-child(1) {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 6s linear infinite;
+}
+.ring i:nth-child(2) {
+  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+  animation: animate 4s linear infinite;
+}
+.ring i:nth-child(3) {
+  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+  animation: animate2 10s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 
-@property --border-angle {
-  syntax: "<angle>";
-  inherits: true;
-  initial-value: 0turn;
+.login {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.login h2 {
+  font-size: 2em;
+  color: #fff;
+}
+.login .inputBx {
+  position: relative;
+  width: 100%;
+}
+.login .inputBx input {
+  position: relative;
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  font-size: 1.2em;
+  color: #fff;
+  box-shadow: none;
+  outline: none;
+}
+.login .inputBx input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: medium;
+}
+.login .links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+.login .links .find-password {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 14px;
+  padding: 5px 10px 0px 10px;
 }
 
-.signup {
-  background-color: #2a2a2a;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Align items to the top */
-  padding: 30px;
-  box-sizing: border-box;
-  overflow: auto; /* Ensures content is scrollable if it exceeds viewport height */
+.login .links .signup-link {
+  padding: 0 20px;
 }
-.signup > div {
-  color: white;
-}
-.signupBox1 {
-  font-size: 32px;
-  font-weight: 700;
-  color: white;
-  margin: 0 0 20px 0;
-  text-align: center;
-}
-.signupBox2 {
+
+.login .sign-inBx input[type="submit"] {
   width: 100%;
-  max-width: 700px;
-}
-.signupBoxGrid {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.signupBox3 {
-  display: flex;
-  flex-direction: column;
-}
-.signupBox3-1 {
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-.signupBox3-2 {
-  width: 100%;
-  height: 40px;
-  margin-bottom: 5px;
-  padding: 5px;
-  box-sizing: border-box;
-  color: black; /* 입력 텍스트 색상 변경 */
-}
-.signupBox3-3 {
-  font-size: 12px;
-  color: #bbb;
-}
-.signupBox3-4 {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 5px;
-}
-.el_ttl {
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-.el_input {
-  width: calc(100% - 10px);
-  height: 40px;
-  padding: 5px;
-  box-sizing: border-box;
-  margin-bottom: 5px;
-  color: black; /* 입력 텍스트 색상 변경 */
-}
-.el_btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  background: #333333;
-  border-radius: 5px;
-  color: #ffffff;
+  background: rgb(94, 94, 94);
+  border: none;
   cursor: pointer;
+  font-size: medium;
+  transition: 0.3s;
 }
-.el_btn--outline {
-  background: unset;
-  border: 1px solid #333333;
-  color: #333333;
-}
-.signupBoxCheckBox {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.signupBoxCheckBoxGrid {
-  display: flex;
-  align-items: center;
-}
-.signupBoxCheckBox-1 {
-  border: 1px solid black;
-  padding: 5px 10px;
-  font-weight: bold;
-  text-align: center;
+.login .sign-inBx {
+  position: relative;
+  width: 100%;
 }
 
+.login .sign-inBx input {
+  position: relative;
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  font-size: 1.2em;
+  color: #fff;
+  box-shadow: none;
+  outline: none;
+}
+.login .sign-inBx input:hover {
+  background: rgb(51, 51, 51);
+}
 
 .hidden {
   display: none;
